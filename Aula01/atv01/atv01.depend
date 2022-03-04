@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1646268101 source:c:\users\elias castro\documents\github\ed2\aula01\atv01\atv01.c
+	<stdio.h>
+	<stdlib.h>
+	"atv01.h"
+
+1646268101 c:\users\elias castro\documents\github\ed2\aula01\atv01\atv01.h
+
+1646351262 source:c:\users\elias castro\documents\github\ed2\aula01\atv01\main.c
+	<stdio.h>
+	<stdlib.h>
+	"atv01.h"
+
