@@ -1,3 +1,14 @@
+/*Atividade 1
+ Elabore um programa que execute os três tipos de busca:
+▪ Busca Linear;
+▪ Busca Ordenada;
+▪ Busca Binária.
+ Para isso, seu programa deverá contar com dois vetores de inteiros, um desordenado
+para a Busca Linear, e outro ordenado para as Buscas Ordenada e Binária.
+ Os resultados devem ser apresentados em tela juntamente com o respectivo vetor
+para a conferência do índice retornado.
+ Entregue no Moodle como Atividade 1 – Buscas em Vetores*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "atv01.h"
