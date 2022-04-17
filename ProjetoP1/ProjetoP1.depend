@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1648866789 source:\\desktop-qp41vbu\compartilhamento\ifsp\3 semestre\estrutura de dados\projeto p1\projetop1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ProjetoP1.h"
+
+1648854377 source:\\desktop-qp41vbu\compartilhamento\ifsp\3 semestre\estrutura de dados\projeto p1\projetop1\projetop1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ProjetoP1.h"
+
+1648854375 \\desktop-qp41vbu\compartilhamento\ifsp\3 semestre\estrutura de dados\projeto p1\projetop1\projetop1.h
+
+1649553042 source:\\desktop-qp41vbu\compartilhamento\ifsp\3 semestre\estrutura de dados\projeto\projetop1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<locale.h>
+	"ProjetoP1.h"
+
+1649552326 \\desktop-qp41vbu\compartilhamento\ifsp\3 semestre\estrutura de dados\projeto\projetop1\projetop1.h
+
+1649552911 source:\\desktop-qp41vbu\compartilhamento\ifsp\3 semestre\estrutura de dados\projeto\projetop1\projetop1.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"ProjetoP1.h"
+
