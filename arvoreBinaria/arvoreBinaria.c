@@ -5,9 +5,11 @@
 
 struct NO{
     int info;
+    int alt;
     struct NO *esq;
     struct NO *dir;
 };
+
 //Arquivo arvoreBinaria.c
 ArvAVL *cria_ArvAVL(){
     ArvAVL *raiz = (ArvAVL*) malloc(sizeof(ArvAVL));
@@ -113,6 +115,26 @@ void posOrdem_ArvAVL(ArvAVL *raiz){
     }
 }
 
+int alt_no(struct NO *no){
+    if(no == NULL){
+        return -1;
+    }else{
+        return no->alt;
+    }
+}
+int fatorBalanceamento_NO{
+    return labs(alt_no(no->esq) - alt_no(no->dir));
+}
+
+int maior(int x, int y){
+    if(x>y){
+        return (x);
+    }else{
+        return (y);
+    }
+}
+
+/*
 //Arquivo arvoreBinaria.c
 int insere_ArvAVL(ArvAVL *raiz, int valor){
     if(raiz == NULL){
@@ -155,6 +177,7 @@ int insere_ArvAVL(ArvAVL *raiz, int valor){
 
 //Arquivo arvoreBinaria.c
 //função auxiliar para remoção o nó especifico
+
 struct NO *remove_atual(struct NO *atual){
     struct NO *no1, *no2;
     if(atual->esq == NULL){
@@ -206,6 +229,7 @@ int remove_ArvAVL(ArvAVL *raiz, int valor){
         }
     }
 }
+*/
 
 //Arquivo arvoreBinaria.c
 int consulta_ArvAVL(ArvAVL *raiz, int valor){
@@ -225,4 +249,73 @@ int consulta_ArvAVL(ArvAVL *raiz, int valor){
     }
     return 0;
 }
+
+
+void rotacaoLL(arvAVL *raiz){
+    struct NO *no;
+    no = (*raiz)->esq;
+    (*raiz)->esq = no->dir;
+    no->dir = *raiz;
+    (*raiz)->alt = maior(alt_no((*raiz)->esq), alt_no((*raiz)->dir)) + 1;
+    no->alt = maior(alt_no(no->esq), (*raiz)->alt +1);
+    *raiz = no;
+}
+
+
+
+void rotacaoRR(arvAVL *raiz){
+    struct NO *no;
+    no = (*raiz)->dir;
+    (*raiz)->dir = no->esq;
+    no->esq = (*raiz);
+    (*raiz)->alt = maior(alt_no((*raiz)->esq), alt_no((*raiz)->dir))+1;
+    (*raiz)=no;
+
+}
+
+void rotacaoLR(arvAVL *raiz){
+    rotacaoRR(&(*raiz)->esq);
+    rotacaoLL(raiz);
+}
+
+void rotacaoRL(arvAVL *raiz){
+    rotacaoRL(&(*raiz)->dir);
+    rotacaoRL(raiz);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
