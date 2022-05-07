@@ -309,16 +309,28 @@ int insere_ArvAVL(ArvAVL *raiz, int valor){
                         rotacaoLR(raiz);
                     }
                 }
-        }else{
-            if(valor > atual->info){
-                    if((res = insere_ArvAVL(&(atual->dir),valor ))==1){
+        }
+    }else{ //Se o valor a inserir não era menor do que o atual..
 
+        if(valor > atual->info){
+            if((res = insere_ArvAVL(&(atual->dir),valor ))==1){
+                if(fatorBalanceamento_NO(atual)>=2){
+                    if(valor < (*raiz)->esq->info){
+                        rotacaoRR(raiz);
+                    }else{
+                    rotacaoRL(raiz);
+                    }
                 }
+
             }
-
-
-
-
+        }else{
+            printf("Valor Duplicado!!\n");
+            return 0;
+        }
+    }
+    atual->alt = maior(alt_no(atual->esq), alt_no(atual->dir)) +1;
+    return res;
+}
 
 
 
