@@ -64,5 +64,10 @@
 	<stdlib.h>
 	"arvoreBinaria.h"
 
-1651875820 c:\users\elias\documents\github\ed2d2\arvorebinaria\arvorebinaria.h
+1651884757 c:\users\elias\documents\github\ed2d2\arvorebinaria\arvorebinaria.h
+
+1651884730 source:c:\users\elias\documents\github\ed2d2\arvorebinaria\arvorebinaria.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreBinaria.h"
 

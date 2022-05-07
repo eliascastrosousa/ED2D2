@@ -20,6 +20,19 @@ int main(){
     x = insere_ArvAVL(raiz, 140);
     x = insere_ArvAVL(raiz, 160);
 
+    if(x){
+        printf("Elemento inserido com sucesso!!");
+    }else{
+        printf("Erro, não foi possivel inserir o elemento.");
+    }
+
+    printf("\nBusca na Arvore Binaria:\n");
+    if(consulta_ArvAVL(raiz, 140)){
+        printf("\nConsulta realizada com sucesso!");
+    }else{
+        printf("\nElemento nao encontrado...");
+    }
+
     //programa principal
     if(vazia_ArvAVL(raiz)){
         printf("A arvore esta vazia.");
@@ -57,12 +70,6 @@ int main(){
 
 
     //programa principal
-    printf("\nBusca na Arvore Binaria:\n");
-    if(consulta_ArvAVL(raiz, 140)){
-        printf("\nConsulta realizada com sucesso!");
-    }else{
-        printf("\nElemento nao encontrado...");
-    }
 
 
     //programa principal

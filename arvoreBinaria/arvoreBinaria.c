@@ -331,8 +331,10 @@ int insere_ArvAVL(ArvAVL *raiz, int valor){
     atual->alt = maior(alt_no(atual->esq), alt_no(atual->dir)) +1;
     return res;
 }
+/*
+int remove_ArvAVL(ArvAVL *raiz, int valor){
 
-
+}*/
 
 
 
