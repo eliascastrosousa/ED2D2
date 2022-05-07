@@ -40,16 +40,17 @@ int consulta_ArvAVL(ArvAVL *raiz, int valor);
 
 int consulta_ArvAVL(ArvAVL *raiz, int valor);
 
-void rotacaoLL(arvAVL *raiz);
+//void rotacaoLL(arvAVL *raiz);
+void rotacaoRR(ArvAVL *raiz);
 
-void rotacaoRR(arvAVL *raiz);
+//void rotacaoLR(arvAVL *raiz);
 
-void rotacaoLR(arvAVL *raiz);
-
-void rotacaoRL(arvAVL *raiz);
+//void rotacaoRL(arvAVL *raiz);
 
 int alt_no(struct NO *no);
 
-int fatorBalanceamento_NO;
+int fatorBalanceamento_NO(struct NO *no);
 
 int maior(int x, int y);
+
+int insere_ArvAVL(ArvAVL *raiz, int valor);
