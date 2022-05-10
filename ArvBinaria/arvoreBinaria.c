@@ -52,6 +52,7 @@ int altura_arvBin(ArvBin *raiz){
     if(*raiz == NULL){
         return 0;
     }
+
     int alt_esq = altura_arvBin(&((*raiz)->esq));
     int alt_dir = altura_arvBin(&((*raiz)->dir));
 
@@ -62,10 +63,53 @@ int altura_arvBin(ArvBin *raiz){
     }
 }
 
+int totalNO_arvBin(ArvBin *raiz){
+    if(raiz == NULL){
+        return 0;
+    }
+    if(*raiz == NULL){
+        return 0;
+    }
 
+    int alt_esq = altura_arvBin(&((*raiz)->esq));
+    int alt_dir = altura_arvBin(&((*raiz)->dir));
 
+    return (alt_esq+alt_dir+1);
+}
 
+void preOrdem_arvBin(ArvBin *raiz){
+    if(raiz == NULL){
+        return;
+    }
+    if(*raiz != NULL){
+        printf("%d\n", (*raiz)->info);
+        preOrdem_arvBin(&((*raiz)->esq));
+        preOrdem_arvBin(&((*raiz)->dir));
+    }
+}
 
+void emOrdem_arvBin(ArvBin *raiz){
+    if(raiz == NULL){
+        return;
+    }
+    if(*raiz != NULL){
+        emOrdem_arvBin(&((*raiz)->esq));
+        printf("%d\n", (*raiz)->info);
+        emOrdem_arvBin(&((*raiz)->dir));
+    }
+}
+
+//Arquivo arvoreBinaria.c
+void posOrdem_arvBin(ArvBin *raiz){
+    if(raiz == NULL){
+        return;
+    }
+    if(*raiz != NULL){
+        posOrdem_arvBin(&((*raiz)->esq));
+        posOrdem_arvBin(&((*raiz)->dir));
+        printf("%d\n", (*raiz)->info);
+    }
+}
 
 
 
