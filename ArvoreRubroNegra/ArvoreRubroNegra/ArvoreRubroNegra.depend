@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1652480955 source:e:\caio\ifsp\3 semestre\estrutura de dados\aula 06\arvorerubronegra\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLRB.h"
+
+1652482292 e:\caio\ifsp\3 semestre\estrutura de dados\aula 06\arvorerubronegra\arvorellrb.h
+
+1652483134 source:e:\caio\ifsp\3 semestre\estrutura de dados\aula 06\arvorerubronegra\arvorellrb.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLRB.h"
+
+1653092211 source:c:\users\aluno\documents\arvorerubronegra\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLRB.h"
+
+1653091929 c:\users\aluno\documents\arvorerubronegra\arvorellrb.h
+
+1653092039 source:c:\users\aluno\documents\arvorerubronegra\arvorellrb.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLRB.h"
+
+1653092039 source:c:\users\elias\documents\github\ed2d2\arvorerubronegra\arvorerubronegra\arvorellrb.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLRB.h"
+
+1653091929 c:\users\elias\documents\github\ed2d2\arvorerubronegra\arvorerubronegra\arvorellrb.h
+
+1653092252 source:c:\users\elias\documents\github\ed2d2\arvorerubronegra\arvorerubronegra\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvoreLLRB.h"
+
